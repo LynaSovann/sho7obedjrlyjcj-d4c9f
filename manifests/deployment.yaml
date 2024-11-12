@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sho7obedjrlyjcj-d4c9f-deployment
+  labels:
+    app: sho7obedjrlyjcj-d4c9f
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sho7obedjrlyjcj-d4c9f
+  template:
+    metadata:
+      labels:
+        app: sho7obedjrlyjcj-d4c9f
+    spec:
+      containers:
+        - name: sho7obedjrlyjcj-d4c9f-container
+          image: pipejet/sho7obedjrlyjcj-d4c9f:latest
+          ports:
+            - containerPort: 3000
