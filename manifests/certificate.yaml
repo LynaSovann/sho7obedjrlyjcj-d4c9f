@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: sho7obedjrlyjcj-d4c9f-certificate
+  namespace: sho7obedjrlyjcj-d4c9f
+spec:
+  secretName: sho7obedjrlyjcj-d4c9f-secret-tls
+  commonName: tan-dara9280-sho7obedjrlyjcj.assessify.org
+  dnsNames:
+  - tan-dara9280-sho7obedjrlyjcj.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
